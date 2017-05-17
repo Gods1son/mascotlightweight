@@ -421,7 +421,7 @@ link:'https://en.wikipedia.org/wiki/Mike_Adenuga'
 {
 src:'images/mikel.jpg',
 title:'mikel',
-hint:'Chealsea FC',
+hint:'Chelsea FC',
 clue:'yusufghikumelo',
 link:'https://en.wikipedia.org/wiki/John_Obi_Mikel'
 },

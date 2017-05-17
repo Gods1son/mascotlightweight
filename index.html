@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Mascots</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="16x16" href="android-icon-96x96.png">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="hopscotch.css">
+<link rel="stylesheet" href="gamecss.css">
+<link rel="stylesheet" href="materialize.min.css">
+<script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
+<script src="materialize.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="hopscotch.js"></script>
+<script src ="gametwo.js"></script>
+    <style>
+        .entry123{
+            width:100%;
+            height: 100%;
+           /* margin-left: -16px;*/
+            font-size: 1.5em;
+            text-transform: uppercase;
+            background-color: forestgreen;
+            color:white;
+            border-radius: 6px;
+        }
+        .col.s2{
+            margin-right: 5px;
+            padding: 0;
+            width: 12.5%;
+            background-color: darkslategray;
+            border-radius: 6px;
+            height: 30px;
+        }
+        #hinter123{
+            background-color: lightcyan;
+            color:darkred;
+            font-size: 1.3em;
+            font-weight: 600;
+            border-radius: 10px;
+            width: 100%;
+            height: 40px;
+        }
+        #images {
+            border: 2px groove green;
+            border-radius: 10px;
+        }
+        #imgholder123{
+            height: 40vh;
+        }
+        #menubar123{
+            font-size:1.3em;
+        }
+    </style>
+</head>
+
+<header id="headmaster" style="margin-bottom:10px;">
+ <ul id="slide-out" class="side-nav" style="background-color:springgreen;">
+    <li style="padding-left:10px"><h5><b>Made in Naija</b></h5></li>
+     <li><hr style="background-color:darkred">
+        <div>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Settings <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;">
+            <label for="switch1" style="font-size:1.1em"><b>Sound</b></label>
+          <input type="checkbox" id="switch1" name="switch1" class="switch" style="zoom:1.4;opacity:1;position:relative;left:0"/><br>
+          <label for="darktheme" style="font-size:1.1em"><b>Dark Theme</b></label> <input type="checkbox" id="darktheme" name="darktheme" onchange="darktheme()" style="zoom:1.4;opacity:1;position:relative;left:0"/>
+        </div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Instruction <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.2em;padding-left:5px;line-height:1.5em;"><span>NaijaMascots® is a word puzzle game. Do you know who the mascot is? Then guess by filling in the empty boxes. Be sure to read about a mascot in the ‘Link About Mascots’ whenever you get a mascot right. Enjoy!.</span></div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Links about Mascots <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1em;"><span><p id="faceslinkss" style="padding:0"> </p></span></div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Developers <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1.5em;"><span>NaijaMascots® is created by a team of young-creative-nerdy-geeky Nigerians who yearn for an educative yet entertaining gaming platform for Nigerians and Africa as a whole. </span></div><hr style="background-color:darkred">
+    </li>
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Appreciation <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1.5em;"><span>We thank everyone who has downloaded this game and are continuously given us feedback on how to improve it. Also, remember to tell your friends about it! Your reviews and critics are all welcome. We also sincerely appreciate all websites which we have gotten information from for all our Mascots. Without you, there’d definitely not be a ‘Link About Mascots’. </span></div>
+    </li><hr style="background-color:darkred">
+      <li><button onclick="startAfresh()" style="background-color:red;font-size:1.3em;font-weight:900;margin:10px 10px 0">Start From Beginning</button></li>
+      <li style="padding-left:10px"><h5><b>Let us represent Naija</b></h5></li>
+  </ul>
+         </div>
+     </li>
+  </ul>
+<!--include video here-->
+<div id="videoholder" style="width:100vw;height:100vh">
+<img src="loading.gif" id="videoopen" style="width:100%;height:40%;">
+</div>
+
+    <div class="row">
+
+    <div class="col s6"><a href="#" data-activates="slide-out" class="button-collapse" id="menubar123" style="font-weight:bold;">&#9776; MENU</a></div>
+    <div class="col s6"><div id="rightscore123"><img src="images/coin.png" width="8%" style="margin-left:60%;"> <span id="score" class="result1">0</span></div></div>
+
+        <div id="ish"></div>
+        <div class="col s6"><span class="label" style="margin-left:45%;">Level:</span> <span id="level" class="result">1</span></div>
+        <div class="col s6"><span class="label"> Stage:</span> <span id="stage" class="result">1</span></div>
+
+    </div>
+</header>
+
+<body>
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal-true">
+
+  <!-- Modal content -->
+  <div class="modal-content-true">
+    <div class="modal-header-true">
+      <marquee direction="right"><span style="font-size:2em;">Naija Mascots</span></marquee>
+    </div>
+    <div class="modal-body">
+      <p><span id="commenter" style="font-size:2em;"></span></p>
+      <img width="100%" id="pictures">
+    </div>
+    <div class="modal-footer-true">
+      <span class="close">continue</span>
+
+
+
+    </div>
+  </div>
+
+</div>
+<!--adding images linking post-->
+<!--class="materialboxed responsive-img"-->
+
+<!--<input type="button" id="research" value="Click to know more about him/her" onclick="openLink()">-->
+<div class="row">
+    <div id="imgholder123" class="col s12" style="float:left;">
+        <img id="images" style="height:100%;width:100%">
+    </div>
+
+    <div id="sociallinks123" class="col s2" style="float:right;margin-top:-52%;background-color:transparent;margin-right:3%;height:0">
+
+        <img src="images/facebook2.png" width="90%" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Hello, do you play Naija Masctos? It is a very cool and educative game. Check it out', null /* img */, 'https://play.google.com/store/apps/details?id=com.phonegap.NaijaMascoteer' /* url */, 'Please long press on your screen and select paste to share. Thanks',null,null)"><br>
+        <img src="images/Whatsappmain.png" width="90%" onclick="window.plugins.socialsharing.shareViaWhatsApp('Hello, do you play Naija Masctos? It is a very cool and educative game. Check it out',null,'https://play.google.com/store/apps/details?id=com.phonegap.NaijaMascoteer')"><br>
+        <img src="images/Twitter.png" width="90%" onclick="window.plugins.socialsharing.shareViaTwitter('Hello, do you play Naija Masctos? It is a very cool and educative game. Check it out',null,'https://play.google.com/store/apps/details?id=com.phonegap.NaijaMascoteer')"><br>
+        <img src="images/sms.png" width="90%" onclick="window.plugins.socialsharing.shareViaSMS('Hello, do you play Naija Masctos? It is a very cool and educative game. Check it out https://play.google.com/store/apps/details?id=com.phonegap.NaijaMascoteer')">
+    </div>
+
+    </div>
+    <br>
+    <!--TRYING THE CLICKABLE BUTTONS-->
+<div id="clickable" class="row">
+
+</div>
+
+    <div id="options">
+        <div class="row" style="display:inline-block;width:100%;margin-bottom:10px">
+    <div class="col s2"><input type="button" id="0" class="entry123"></div><div class="col s2"><input type="button" id="1" class="entry123"></div><div class="col s2"><input type="button" id="2"  class="entry123"></div><div class="col s2"><input type="button" id="3"  class="entry123"></div><div class="col s2"><input type="button" id="4"  class="entry123"></div><div class="col s2"><input type="button" id="5" class="entry123"></div><div class="col s2"><input type="button" id="6" class="entry123"></div>
+        </div><br>
+        <div class="row" style="display:inline-block;width:100%;">
+    <div class="col s2"><input type="button" id="7" class="entry123"></div><div class="col s2"><input type="button" id="8" class="entry123"></div><div class="col s2"><input type="button" id="9" class="entry123"></div><div class="col s2"><input type="button" id="10" class="entry123"></div><div class="col s2"><input type="button" id="11" class="entry123"></div><div class="col s2"><input type="button" id="12" class="entry123"></div><div class="col s2"><input type="button" id="13" class="entry123"></div><br>
+        </div>
+    </div>
+
+<div class="controller">
+    <div class="row">
+    <div class="col s3" style="padding:0;"><button onclick="helperMan()" id="hinter123">Help!</button></div>
+    <div class="col s9"><span id="help"></span></div>
+    </div>
+</div>
+<span id="result"></span><br>
+<audio loop="loop" src="beep50.mp3" id="music"></audio>
+</body>
+</html>

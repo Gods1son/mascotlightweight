@@ -419,6 +419,12 @@ button.accordion.active:after {
     margin-bottom: 90%;
 }
 
+/*query for smarthphones portrait below*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #imgholder123{height: 200px;}  
+}
+
+/*query for tablets portrait below*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
     #menubar123{font-size:2.3em;}

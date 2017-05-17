@@ -92,7 +92,7 @@ link:'https://en.wikipedia.org/wiki/Deola_Sagoe'
 {
 src:'images/toke.jpg',
 title:'toke',
-hint:'On Becoming',
+hint:'On Becoming and OAP',
 clue:'qaztowiejokeme',
 link:'https://en.wikipedia.org/wiki/Toke_Makinwa'
 },
@@ -190,7 +190,7 @@ link:'https://en.wikipedia.org/wiki/C._Odumegwu_Ojukwu'
 {
 src:'images/iceprince.jpg',
 title:'iceprince',
-hint:'chocolate city',
+hint:'oleku crooner',
 clue:'zpqroifgncecei',
 link:'https://en.wikipedia.org/wiki/Ice_Prince'
 },
@@ -204,7 +204,7 @@ link:'https://en.wikipedia.org/wiki/Noble_Igwe'
 {
 src:'images/tybello.jpg',
 title:'tybello',
-hint:'music & photography',
+hint:'the land is green',
 clue:'lebroyfgntecli',
 link:'https://en.wikipedia.org/wiki/TY_Bello'
 },
@@ -267,7 +267,7 @@ link:'https://en.wikipedia.org/wiki/Bruce_Onobrakpeya'
 {
 src:'images/timidakolo.jpg',
 title:'timidakolo',
-hint:'Idols W.Africa',
+hint:'Iyawo Mi Crooner',
 clue:'gmitiksolnodua',
 link:'https://en.wikipedia.org/wiki/Timi_Dakolo'
 },
@@ -463,7 +463,7 @@ link:'https://en.wikipedia.org/wiki/Tolu_Ogunlesi'
 {
 src:'images/donjazzy.jpg',
 title:'donjazzy',
-hint:'Mavin',
+hint:'Mavin Records',
 clue:'bozzyjaondpqah',
 link:'https://en.wikipedia.org/wiki/Don_Jazzy'
 },
@@ -477,7 +477,7 @@ link:'https://en.wikipedia.org/wiki/Gamaliel_Onosode'
 {
 src:'images/phyno.jpg',
 title:'phyno',
-hint:'No Guts No Glory',
+hint:'Alobam',
 clue:'awqkunleknohyp',
 link:'https://en.wikipedia.org/wiki/Phyno'
 },
@@ -574,7 +574,7 @@ link:'http://kelechiamadiobi.com/about-us/'
 },
 {
 src:'images/2face.jpg',
-title:'2face',
+title:'2baba',
 hint:'Hypertech',
 clue:'qpltub2ebafcea',
 link:'https://en.wikipedia.org/wiki/2Baba'
@@ -659,7 +659,7 @@ link:'https://en.wikipedia.org/wiki/Anthony_Joshua'
 {
 src:'images/goodluck.jpg',
 title:'goodluck',
-hint:'No Shoes',
+hint:'Ex-presido',
 clue:'lujooongdatckh',
 link:'https://en.wikipedia.org/wiki/Goodluck_Jonathan'
 },
@@ -862,7 +862,7 @@ link:'https://en.wikipedia.org/wiki/Photographer'
 {
 src:'images/crossdress.jpg',
 title:'crossdress',
-hint:'Self Discovery',
+hint:'Dress Mode',
 clue:'crxvsossdrwess',
 link:'https://en.wikipedia.org/wiki/Cross-dressing'
 },

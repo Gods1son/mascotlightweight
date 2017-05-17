@@ -421,7 +421,7 @@ button.accordion.active:after {
 
 /*query for smarthphones portrait below*/
 @media (min-width: 320px) and (max-width: 480px) {
-    #imgholder123{height: 200px;}  
+    #imgholder123{height: 230px;}  
 }
 
 /*query for tablets portrait below*/
